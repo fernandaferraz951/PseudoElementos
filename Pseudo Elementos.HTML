@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pts-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Elementos</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+
+        body{
+            width: 100%;
+            background:rgb(204, 156, 23);}
+
+            section{
+            width: 80%;
+            background:white;
+            margin: 0 auto;
+            border: 1px solid silver;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius:10px;
+        }
+        
+        div{
+            padding: 15px;
+            background:white;
+            margin: 15px 0;
+        }
+        
+        .tracos::before{
+            content:"--"
+        }
+
+        .estrela::before{
+            content:"\2605";
+
+        }
+
+        .coracaodps::after{
+            content: "\2765";
+
+        }
+
+        .coracaodps::before{
+            content:"\2765"
+        }
+
+        .conteudoesp::selection{
+            color: darkred;
+            background:white;
+        }
+
+        .lorem{
+            font-size:20px;
+        }
+
+        .lorem::first-letter{
+        color:blueviolet;
+        font-size: 90px;
+        font-family: cursive;
+        }
+
+        .lorem::first-line{
+        color:fuchsia; 
+        font-family: serif;
+
+
+        }
+
+           </style>
+
+</head>
+<body>
+
+    <section>
+        <h1>Pseudo-Elementos</h1>
+
+        <p>Um pseudoelemento CSS é uma palavra-chave adicionada a um seletor que permite estilizar uma parte específica do (s) elemento (s) selecionado (s). Por exemplo, ::first-line pode ser usado para alterar a fonte da primeira linha de um parágrafo.</p>
+        <br>
+
+        <p>
+            <strong>::after  </strong>=Permite a inserção de conteudos (texto ou imagem) depois do conteúdo de um elemento;<br>
+            <strong>::before  </strong> = Permite a inserção de conteudos (texto ou imagem) depois do conteúdo de um elemento;<br>  
+            <strong>::selection </strong> = Permite customizar uma seleção feita pelo usuário;<br>
+            <strong>::firt-letter  </strong>  =Permite customizar a primeira letra de um elemento;<br>
+            <strong>::first line</strong> =Permite customizar a primeira linha de um texto de um elemento;<br>
+            </p>
+            <hr>
+        
+    
+            <div class="tracos">Conteudo com traços no começo do texto
+            </div>
+    
+            <div class="estrela">
+                
+            Conteúdo com estrela Antes
+        
+            </div>
+
+        
+
+
+            <div class="coracaodps">
+                Conteúdo com coração antes e depois
+
+            </div>
+
+            <div class= "conteudoesp">
+                Conteúdo com Seleção Especial
+
+            </div>
+            <hr>
+
+            <div class="lorem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga blanditiis pariatur quo autem quod, quis iste deserunt, <br>tenetur debitis ut atque libero qui corrupti sit animi maiores illum illo a?<br>
+            </div>
+            <hr>
+            
+        </section>
+        
+    </body>
+    </html>
+
+    
+    
+           
+       
+      
+       
+    
+       
+            
+      
+
+
+        
+          
+
+         
+      
+
+       
+
+
+      
+
+
+
+
+        
+
+            
+
+
+
+    </section>
+    
+</body>
+</html>
